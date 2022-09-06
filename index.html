@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahorcado</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="logo" class="logo">
+    </header>
+    <main>
+        <form class="botones">
+            <div id="div-pantalla-palabra">
+                <input type="text" id="ingresopalabra" placeholder="Ingrese una palabra">
+                <label class="label"><img src="images/!.png" alt="signo de interrogacion">Máximo 8 letras</label>
+                <input type="button" value="Guardar y empezar" class="boton izquierdo" id="boton-guardar">
+                <input type="button" value="Cancelar" id="boton-cancelar" class="boton derecho">
+            </div>
+            <div id="div-pantalla-juego">
+
+                <div class="mensaje-final">
+                    <p id="mensaje-ganador">
+                        Felicidades, ganó!!!
+                    </p>
+                    <p id="mensaje-perdedor">
+                        Lastimosamente perdió
+                    </p>
+                </div>
+
+                <div class="muneco">
+                    <img src="images/1.png" class="muneco-img" id="muneco1">
+                    <img src="images/2.png" class="muneco-img" id="muneco2">
+                    <img src="images/3.png" class="muneco-img" id="muneco3">
+                    <img src="images/4.png" class="muneco-img" id="muneco4">
+                    <img src="images/5.png" class="muneco-img" id="muneco5">
+                    <img src="images/6.png" class="muneco-img" id="muneco6">
+                    <img src="images/7.png" class="muneco-img" id="muneco7">
+                    <img src="images/8.png" class="muneco-img" id="muneco8">
+                </div>
+
+                <div id="letras-superiores">
+                    <p> </p>
+                </div> 
+
+                <div class="caja">
+                    <img src="images/line.png" id="1" class="linea">
+                    <img src="images/line.png" id="2" class="linea">
+                    <img src="images/line.png" id="3" class="linea">
+                    <img src="images/line.png" id="4" class="linea">
+                    <img src="images/line.png" id="5" class="linea">
+                    <img src="images/line.png" id="6" class="linea">
+                    <img src="images/line.png" id="7" class="linea">
+                    <img src="images/line.png" id="8" class="linea">
+                </div>
+                
+                <div id="letras-inferiores">
+                    <p> </p>
+                </div> 
+
+                <input type="button" value="Nuevo juego" class="boton izquierdo" id="boton-juego">
+                <input type="button" value="Desistir" id="boton-desistir" class="boton derecho">
+            </div>
+            <div id="div-pantalla-inicio">
+                <input type="button" value="Iniciar juego" id="boton-inicio" class="boton izquierdo">
+                
+                <input type="button" value="Agregar palabra" id="boton-agregar" class="boton derecho">
+            </div>
+                
+        </form>
+        
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+

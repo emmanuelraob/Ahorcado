@@ -1,0 +1,190 @@
+:root{
+    --base : #262626;
+    --acento : #E78E26;
+    --blanco : #F3F3F3;
+}
+
+body{
+    background: var(--base);
+    font-family: 'Inter', sans-serif;
+    max-width: 100%;
+}
+
+
+/*logo*/
+header{
+    text-align: center;
+}
+.logo{
+    max-width: 160px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/*botones*/
+.boton{
+    border: none;
+    font-size: 25px;
+    text-decoration: none;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.izquierdo{
+    background: var(--acento);
+    color: var(--blanco);
+    position: absolute;
+    top: calc(100% - 65px);
+    left: 0px;
+    width: 50%;
+}
+.izquierdo:hover{
+    color: var(--base);
+}
+
+.derecho{
+    font-weight: light;
+    position: absolute;
+    top: calc(100% - 65px);
+    left: 50%;
+    width: 50%;
+    background: var(--blanco);
+    color: var(--base);
+}
+.derecho:hover{
+    color: var(--acento);
+}
+
+.label{
+    margin-left: 30%;
+    padding-top: 300px;
+    position: absolute;
+    top: 200px;
+    color: var(--blanco);
+}
+.label img {
+    margin-right: 10px;
+}
+
+/*ingreso de texto en la parte de la palabra*/
+
+#ingresopalabra{
+    width: 60%;
+    margin: 10% 30%;
+    background: transparent;
+    color: var(--blanco);
+    font-size: 32px;
+    border: none;
+}
+#ingresopalabra:focus{
+    border: none;
+    outline: none ;
+}
+
+/*la parte de donde se juega todo*/
+
+.mensaje-final{
+    position: absolute;
+    top: 40%;
+    right: 15%;
+    color: var(--blanco);
+}
+
+.caja{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.muneco{
+    margin-top: 50px;
+    display: inline-block;
+    text-align: center;
+
+}
+
+#div-pantalla-juego{
+    text-align: center;
+}
+
+#letras-superiores p{
+    color: var(--blanco);
+    display: inline-block;
+    font-size: 30px;
+    margin: 80px 33px 0 33px;
+    width: 18px;
+}
+
+
+#letras-inferiores{
+    color: var(--blanco);
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+@media (max-width: 768px) {
+    #ingresopalabra{
+        margin: 10% 30px;
+    }
+    .label{
+        position: absolute;
+        left: 30px;
+        margin: 0;
+    }
+}
+
+
+
+@media (max-width: 500px) {
+    .logo{
+        max-width: 100px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    #ingresopalabra{
+        width: 90%;
+        margin: 10% 5%;
+    }
+    .label{
+        padding-top: 300px;
+        position: relative;
+        top: 200px;
+    }
+    .boton{
+        display: block;
+        position:absolute;
+        left: 0;
+        width: 100%;
+    }
+    .izquierdo{
+        position: absolute;
+        top: calc(100% - 130px);
+    }
+
+    .mensaje-final{
+        position: absolute;
+        top: 62%;
+        right: 35%;
+        font-size: 12px;
+    }
+
+    .muneco{
+        margin-top: 50px;
+        display: inline-block;
+        width: 350px;
+        text-align: center;
+    
+    }
+
+    #letras-superiores p{
+        font-size: 12px;
+        margin: 80px 16px 0 16px;
+        width: 12px;
+    }
+    .linea{
+        width: 40px;
+        display: inline-block;
+    }
+    
+
+}
