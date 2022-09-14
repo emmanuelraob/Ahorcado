@@ -8,7 +8,7 @@ document.getElementById("div-pantalla-juego").style.display = 'none';
 document.getElementById("mensaje-ganador").style.display = 'none';
 document.getElementById("mensaje-perdedor").style.display = 'none';
 
-/*zona de botones*/
+/*zona de botones */
 //botones de la pagina inicial
 document.getElementById("boton-inicio").onclick = (e) => {
     document.getElementById("div-pantalla-juego").style.display = 'block';
